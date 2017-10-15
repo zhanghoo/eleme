@@ -24,9 +24,9 @@ A sell base on nodejs, webpack, vue2.0, vue-cli, vue-router, vuex, axios, scss.
 |    | main.js
 |--static                      # 存放第三方静态资源
 |       | .gitkeep             # 当目录为空时, 也可以将这个文件提交到git仓库中
-| .babelrc  				   # babel的配置
+| .babelrc                     # babel的配置
 | .editorconfig                # 编辑器配置
-| .gitignore				   # 忽略无需git控制的文件
+| .gitignore                   # 忽略无需git控制的文件
 | .postcssrc.js                # postcss的配置
 | index.html                   # 首页
 | package.json                 # 项目依赖版本即基本信息
