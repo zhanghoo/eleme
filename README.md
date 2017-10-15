@@ -7,3 +7,4 @@ A sell base on nodejs, webpack, vue2.0, vue-cli, vue-router, vuex, axios, scss.
 
 # 0. 准备阶段
 为了在GitHub项目库的README.md中插入图片, 在对应的项目中新建Screenshots文件夹, 用于存放插入的截图图片. 保存此时的README, add commit 之后, 同步到远程库中.
+![以上操作截图](https://github.com/zhanghoo/eleme/master/Screenshots/20171015003.png)
