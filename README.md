@@ -15,3 +15,5 @@ A sell base on nodejs, webpack, vue2.0, vue-cli, vue-router, vuex, axios, scss.
 <code style="color: #D05;background: #fafafa;">git push -u origin master</code> 提交到远程库中, 第一次加参数 -u  之后就可以省略了. 最后看一下 status, nothing to commit , OK.
 </p>
 </div>
+<p align="center"><img src="https://github.com/zhanghoo/eleme/blob/master/Screenshots/20171015001.png" alt="将远程库关联同步到本地"></p>
+<p>此时, 已建立项目目录, 目录中可以看到远程库同步下来的文件README.md文件, 其他的就没有了. 可以开始了. </p>
