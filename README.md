@@ -7,18 +7,21 @@ A sell base on nodejs, webpack, vue2.0, vue-cli, vue-router, vuex, axios, scss.
 
 # 项目文件介绍
 <pre>
-|--build                       # 
+|--build                       # webpack和其他相关配置
 |      |
 |      ...
-|--config
+|--config                      # 项目配置
 |       |
 |       ...
 |--node_modules                # 通过npm install 安装的依赖代码库
 |--Notes                       # 学习笔记, 这里看到一步一步的搭建完整项目的学习笔记 与项目本身无关
 |--Screenshots                 # 保存说明截图, 与项目本身无关
 |--src                         # 存放项目源码
-|    |
-|    ...
+|    |--assets                 # 静态资源文件
+|    |--components             # 组件
+|    |--router                 # 路由配置存放
+|    | App.vue
+|    | main.js
 |--static                      # 存放第三方静态资源
 |       | .gitkeep             # 当目录为空时, 也可以将这个文件提交到git仓库中
 | .babelrc  				   # babel的配置
@@ -26,7 +29,7 @@ A sell base on nodejs, webpack, vue2.0, vue-cli, vue-router, vuex, axios, scss.
 | .gitignore				   # 忽略无需git控制的文件
 | .postcssrc.js                # postcss的配置
 | index.html                   # 首页
-| package.json                 # 项目配置
+| package.json                 # 项目依赖版本即基本信息
 | package-lcok.json            # 忽略项目配置安装依赖已更新
 | README.md                    # 项目说明
 </pre>
