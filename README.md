@@ -34,4 +34,8 @@ A sell base on nodejs, webpack, vue2.0, vue-cli, vue-router, vuex, axios, scss.
 | README.md                    # 项目说明
 </pre>
 
+# 开发 Notes
+<p><a href="https://github.com/zhanghoo/eleme/blob/master/Notes/0.Ready.md">0 准备阶段</a></p>
+<p><a href="https://github.com/zhanghoo/eleme/blob/master/Notes/1.Use%20vue-cli.md">1 Vue-cli开启Vuejs项目</a></p>
+
 
