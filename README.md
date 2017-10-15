@@ -9,3 +9,9 @@ A sell base on nodejs, webpack, vue2.0, vue-cli, vue-router, vuex, axios, scss.
 为了在GitHub项目库的README.md中插入图片, 在对应的项目中新建Screenshots文件夹, 用于存放插入的截图图片. 保存此时的README, add commit 之后, 同步到远程库中.
 <p align="center">
 <img src="https://github.com/zhanghoo/eleme/blob/master/Screenshots/20171015003.png" alt="将本地git库同步到远程git库中"></p>
+<div>
+<p>Git补充:</p> 
+<p>提交到本地版本库之前, 可先通过<code style="color: #D05;background: #fafafa;">git status</code>命令查看一下, 可看到对README.md 进行了修改和 添加了Screenshots文件夹. <code style="color: #D05;background: #fafafa;">git add .</code>命令, 将工作区的文件添加到缓存区, <code style="color: #D05;background: #fafafa;">git commit</code> 提交到版本库, 
+<code style="color: #D05;background: #fafafa;">git push -u origin master</code> 提交到远程库中, 第一次加参数 -u  之后就可以省略了. 最后看一下 status, nothing to commit , OK.
+</p>
+</div>
