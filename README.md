@@ -37,6 +37,7 @@ A sell base on nodejs, webpack, vue2.0, vue-cli, vue-router, vuex, axios, scss.
 # 开发 Notes
 <p><a href="https://github.com/zhanghoo/eleme/blob/master/Notes/0.Ready.md" title="0 准备阶段">0 准备阶段</a></p>
 <p><a href="https://github.com/zhanghoo/eleme/blob/master/Notes/1.Use%20vue-cli.md" title="1 Vue-cli开启Vuejs项目">1 Vue-cli开启Vuejs项目</a></p>
-<p><a href="https://github.com/zhanghoo/eleme/blob/master/Notes/2.Infrastructure setup.md" title="2 项目初期构建">2 项目初期构建</a></p>
-<p><a href="https://github.com/zhanghoo/eleme/blob/master/Notes/3.Build page structure.md" title="3 页面结构搭建">3 页面结构搭建</a></p>
+<p><a href="https://github.com/zhanghoo/eleme/blob/master/Notes/2.Infrastructure%20setup.md" title="2 项目初期构建">2 项目初期构建</a></p>
+<p><a href="https://github.com/zhanghoo/eleme/blob/master/Notes/3.Build%20page%20structure.md" title="3 页面结构搭建">3 页面结构搭建</a></p>
+<p><a href="https://github.com/zhanghoo/eleme/blob/master/Notes/4.header's%20component%20development.md" title="4 header组件开发">4 header组件开发</a></p>
 
