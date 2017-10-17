@@ -43,13 +43,14 @@
     <div class="content">
       <!-- 路由出口 -->
       <!-- 路由匹配到的组件将渲染在这里 -->
-      <router-view></router-view>
+      <router-view :seller="seller"></router-view>
     </div>
   </div>
 </template>
 
 <script>
 import header from '@/components/header/header.vue';
+import goods from '@/components/goods/goods.vue';
 import axios from 'axios';
 
 export default {
@@ -65,7 +66,8 @@ export default {
     });
   },
   components: {
-    'v-header': header
+    'v-header': header,
+    goods
   }
 }
 </script>

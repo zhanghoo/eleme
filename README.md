@@ -40,4 +40,5 @@ A sell base on nodejs, webpack, vue2.0, vue-cli, vue-router, vuex, axios, scss.
 <p><a href="https://github.com/zhanghoo/eleme/blob/master/Notes/2.Infrastructure%20setup.md" title="2 项目初期构建">2 项目初期构建</a></p>
 <p><a href="https://github.com/zhanghoo/eleme/blob/master/Notes/3.Build%20page%20structure.md" title="3 页面结构搭建">3 页面结构搭建</a></p>
 <p><a href="https://github.com/zhanghoo/eleme/blob/master/Notes/4.header's%20component%20development.md" title="4 header组件开发">4 header组件开发</a></p>
+<p><a href="https://github.com/zhanghoo/eleme/blob/master/Notes/5.good's%20good's%20list%20development.md" title="5 goods 商品列表开发">5 goods 商品列表开发</a></p>
 
