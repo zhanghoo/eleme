@@ -29,19 +29,23 @@
 								<span class="now">￥{{food.price}}</span>
 								<span class="old" v-show="food.oldPrice">￥{{food.oldPrice}}</span>
 							</div>
+							<div class="cartcontrol-wrapper">
+								<cartcontrol :food="food"></cartcontrol>
+							</div>
 						</div>
 					</li>
 				</ul>
 			</li>
 		</ul>
 	</div>
-	<shopcart :delivery-price="seller.deliveryPrice" :min-price="seller.minPrice"></shopcart>
+	<shopcart :select-foods="selectFoods" :delivery-price="seller.deliveryPrice" :min-price="seller.minPrice"></shopcart>
 </div>
 </template>
 
 <script>
 import BScroll from 'better-scroll';
 import shopcart from '@/components/shopcart/shopcart.vue';
+import cartcontrol from '@/components/cartcontrol/cartcontrol.vue';
 import axios from 'axios';
 
 export default {
@@ -55,6 +59,7 @@ export default {
 			goods: [],
 			listHeight: [],
 			scrollY: 0,
+			selectedFood: {}
 		}
 	},
 	computed: {
@@ -67,6 +72,21 @@ export default {
                 }
             }
             return 0;
+        },
+        selectFoods() {
+        	let foods = [];
+        	//商品分类
+        	this.goods.forEach((good) => {
+        		//分类中的食品
+        		good.foods.forEach((food) => {
+        			//食品数不为0 添加值 临时数组foods中
+        			if(food.count) {
+        				foods.push(food);
+        			}
+        		})
+        	});
+        	//返回即为选择的食品
+        	return foods;
         },
 	},
 	created () {
@@ -91,6 +111,12 @@ export default {
             // 调用better-scroll 方法滚动到响应位置
             this.foodScroll.scrollToElement(el, 300);
 		},
+		// _drop(target) {
+  // 			//体验优化,异步执行下落动画
+	 //  		this.$nextTick(() => {
+	 //  			this.$refs.shopcart.drop(target);
+	 //  		});
+  // 		},
 		_initScroll() {
 			this.menuScroll = new BScroll(this.$refs.menuWrapper, {
 				click: true
@@ -118,8 +144,14 @@ export default {
         }
 	},
 	components: {
-		shopcart
-	}
+		shopcart,
+		cartcontrol
+	},
+    // events: {
+    // 	'cart.add'(target) {
+    // 		this._drop(target);
+    // 	}
+    // }
 };
 </script>
 

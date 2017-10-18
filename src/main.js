@@ -11,5 +11,10 @@ new Vue({
   el: '#app',
   router,
   template: '<App/>',
-  components: { App }
+  components: { App },
+  data: {
+	// 将在各处使用该事件中心
+	// 组件通过它来通信
+	eventHub: new Vue()
+  }
 })
