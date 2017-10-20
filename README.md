@@ -45,3 +45,9 @@ A sell base on nodejs, webpack, vue2.0, vue-cli, vue-router, vuex, axios, scss.
 <p><a href="https://github.com/zhanghoo/eleme/blob/master/Notes/7.rating's%20list%20development.md" title="7 ratings评价列表页实现">7 ratings评价列表页实现</a></p>
 <p><a href="https://github.com/zhanghoo/eleme/blob/master/Notes/8.seller's%20detail%20development.md" title="8 seller商家详情页实现">8 seller商家详情页实现</a></p>
 
+##项目打包编译
+<pre>
+npm run build
+</pre>
+<p>打包之后, 启动本地HTTP server服务, 访问dist/index.html即可.</p>
+
