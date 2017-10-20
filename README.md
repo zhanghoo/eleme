@@ -56,5 +56,10 @@ npm run build
 </pre>
 <p>这样就可以访问了.注意端口.</p>
 
-<p>上传dist目录(在.gitignore项目中去掉'dist/'在push), 直接在GitHub可进行项目预览</p>
+## 项目预览
+<p>上传dist目录(在.gitignore文件中去掉'dist/'再push). </p>
+<p><img src="https://github.com/zhanghoo/eleme/blob/master/Screenshots/20171020011.png" alt="settings"></p>
+<p>在Github Pages中的Source调整为master branch, 可以看到, 上面的published 的文件链接访问</p>
+<p><img src="https://github.com/zhanghoo/eleme/blob/master/Screenshots/20171020011.png" alt="Github Pages"></p>
+<p>如果是该项目中有index.html即可访问, 但是我们实际上访问的是dist中的index.html, 所以这里进行项目预览我们可以访问<a href="https://zhanghoo.github.io/eleme/dist/" title="eleme 项目预览">https://zhanghoo.github.io/eleme/dist/</a></p>
 
