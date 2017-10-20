@@ -43,31 +43,38 @@
     <div class="content">
       <!-- 路由出口 -->
       <!-- 路由匹配到的组件将渲染在这里 -->
-      <router-view :seller="seller"></router-view>
+      <keep-alive>
+        <router-view :seller="seller"></router-view>
+      </keep-alive>
     </div>
   </div>
 </template>
 
 <script>
+import {urlParse} from '@/common/js/util';
 import header from '@/components/header/header.vue';
-import goods from '@/components/goods/goods.vue';
 import axios from 'axios';
 
 export default {
   name: 'app',
   data() {
     return {
-      seller: {}
+      seller: {
+        id: (() => {
+          let queryParam = urlParse();
+          return queryParam.id;
+        })()
+      }
     }
   },
   created() {
-    axios.get('static/data.json').then((res) => {
-      this.seller = res.data.seller;
+    axios.get('static/data.json?id=' + this.seller.id).then((res) => {
+      // 相当于 extend方法 扩展  es6语法   vue推荐的给对象扩展属性方法
+      this.seller = Object.assign({}, this.seller, res.data.seller);
     });
   },
   components: {
     'v-header': header,
-    goods
   }
 }
 </script>
