@@ -45,9 +45,16 @@ A sell base on nodejs, webpack, vue2.0, vue-cli, vue-router, vuex, axios, scss.
 <p><a href="https://github.com/zhanghoo/eleme/blob/master/Notes/7.rating's%20list%20development.md" title="7 ratings评价列表页实现">7 ratings评价列表页实现</a></p>
 <p><a href="https://github.com/zhanghoo/eleme/blob/master/Notes/8.seller's%20detail%20development.md" title="8 seller商家详情页实现">8 seller商家详情页实现</a></p>
 
-##项目打包编译
+## 项目打包编译
 <pre>
 npm run build
 </pre>
-<p>打包之后, 启动本地HTTP server服务, 访问dist/index.html即可.</p>
+<p>本地调试</p>
+<p>打包之后, 在本地项目根目录新建一个prod.server.js, 用于本地的服务启动</p>
+<pre>
+	node prod.server.js
+</pre>
+<p>这样就可以访问了.注意端口.</p>
+
+<p>上传dist目录(在.gitignore项目中去掉'dist/'在push), 直接在GitHub可进行项目预览</p>
 
