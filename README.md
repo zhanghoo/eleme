@@ -63,3 +63,5 @@ npm run build
 <p><img src="https://github.com/zhanghoo/eleme/blob/master/Screenshots/20171020012.png" alt="Github Pages"></p>
 <p>如果是该项目中有index.html即可访问, 但是我们实际上访问的是dist中的index.html, 所以这里进行项目预览我们可以访问<a href="https://zhanghoo.github.io/eleme/dist/?id=zhanghoo/#/goods" title="eleme 项目预览">https://zhanghoo.github.io/eleme/dist/?id=zhanghoo/#/goods</a></p>
 
+<p>未解决: 这里在dist/index.html中引入打包的文件时出现了路径问题. 在本地调试node prod.server.js, 访问时, src=/static/js/... 之类的路径是OK的, 但是在Github需要改成 src=./static/js/... 路径改后, 在本地也OK, 打包的问题??</p>
+
