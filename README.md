@@ -66,3 +66,6 @@ npm run build
 <p>未解决: 这里在dist/index.html中引入打包的文件时出现了路径问题. 在本地调试node prod.server.js, 访问时, src=/static/js/... 之类的路径是OK的, 但是在Github需要改成 src=./static/js/... 路径改后, 在本地也OK, 打包的问题??</p>
 <p>已解决: 在index.js中有文件打包的配置, 粗心了. 将assetsPublicPath: '/', 改成 assetsPublicPath: './' 就OK了</p>
 
+##其他补充
+<p>1. 关于使用sass作为预处理器, 需<a href="https://www.npmjs.com/package/sass-loader" title="安装sass-loader">安装sass-loader</a></p>
+
